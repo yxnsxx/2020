@@ -1,0 +1,36 @@
+<div class="hair">
+	<div class="left"><img src="resource/img/mobile/m_00_header_01.png" onclick="location.href='/main.html';"></div>
+	<div class="right" id="menu-open"><img src="resource/img/mobile/m_00_menu.png"></div>
+</div>
+<div class="menu-on">
+    <div class="hair-on">
+        <div class="left"><img src="resource/img/mobile/m_00_header_02.png" onclick="location.href='/main.html';"></div>
+        <div class="right" id="menu-close"><img src="resource/img/mobile/m_00_menu_x.png"></div>
+    </div>
+    <div class="gnb">
+        <ul>
+            <li><a href="../main.html">MAIN</a></li>
+            <li><a href="../page01.html">ABOUT ME</a></li>
+            <li><a href="../page02.html">PROJECT WORK</a></li>
+            <li><a href="../page03.html">DESIGN WORK</a></li>
+            <li><a href="../page04.html">FOR LOVE</a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+<script type="text/javascript">
+    $(function(){
+        $('#menu-open').click(function(){
+            $('.menu-on').css("width","100%");
+            $('.hair-on').css("display","block");
+            $('.gnb').css("display","block");
+        });
+    });
+    $(function(){
+        $('#menu-close').click(function(){
+            $('.menu-on').css("width","0%");
+            $('.hair-on').css("display","none");
+            $('.gnb').css("display","none");
+        });
+    });
+</script>
