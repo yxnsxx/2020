@@ -37,7 +37,7 @@
 .wrap-m .intro .titleB { color:#fff; font-size:0.8em; font-weight:700; position:absolute; left:50%; bottom:3em; transform:translate(-50%, -50%); }
 
 /* MAIN - WEB */
-.wrap .container { border:1px solid #fff; background-image:url(/resource/img/pc/01_content_01.png); background-repeat:no-repeat; background-position:80px; }
+.wrap .container { border:1px solid #fff; background-image:url(../img/pc/01_content_01.png); background-repeat:no-repeat; background-position:80px; }
 .wrap .container .text { text-align:right; padding:70px; }
 .wrap .container .text .title { color:#f5f4f2; font-size:80px; font-weight:700; text-shadow:-1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333; }
 .wrap .container .text .text-01 { font-size:12px; line-height:1.4; padding:10px 0 0; }
