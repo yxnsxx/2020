@@ -50,7 +50,7 @@
 .wrap .container .content-sub .cont-favorite ul li img {  }
 
 /* SUB - PAGE01 - MOBILE */
-.wrap-m .container { text-align:left; padding:2em 3vw; font-size:0.9em; background:url(/resource/img/mobile/m_00_common_bg.png) no-repeat; background-size:100%; background-position:0 3em; }
+.wrap-m .container { text-align:left; padding:7em 3vw 2em; font-size:0.9em; background:url(/resource/img/mobile/m_00_common_bg.png) no-repeat; background-size:100%; background-position:0 3em; }
 .wrap-m .container .sub-title { padding:0 0 2em; }
 .wrap-m .container .content { padding:1.2em; background:#fff; }
 .wrap-m .container .content h5 { color:#7ee5d0; font-size:1.3em; }
