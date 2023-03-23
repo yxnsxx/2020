@@ -45,7 +45,7 @@
 .wrap .container .text img.end {  }
 
 /* MAIN - MOBILE */
-.wrap-m .container { text-align:center; padding:2em 0; }
+.wrap-m .container { text-align:center; padding:7em 0 2em; }
 .wrap-m .container .text {  }
 .wrap-m .container .text .title { width:50%; margin:0 auto 2em; }
 .wrap-m .container .text .title img {  }
