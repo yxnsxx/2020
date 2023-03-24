@@ -16,19 +16,13 @@
 <link rel="stylesheet" href="./resource/css/common.css">
 <link rel="stylesheet" href="./resource/css/sub.css">
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>   
-		$(document).ready(function() {
-			$("#header").load("./header.html");
-			$("#footer").load("./footer.html");
-			$("#header-m").load("./header-m.html");
-			$("#footer-m").load("./footer-m.html");
-		});
-	</script>
+<script src="./resource/js/resize.js"></script>
 </head>
 <body>
-<div class="wrap">
+<div class="wrapSwitch wrap">
 	<div class="header" id="header"></div>
 	<div class="container">
+		<img src="resource/img/mobile/m_01_title.png" class="sub-title moOnly" alt="about me">
 		<div class="content">
 			<h5>프로필</h5>
 			<dl class="profile-list">
@@ -114,95 +108,6 @@
 		</div>
 	</div>
 	<div class="footer" id="footer"></div>
-</div>
-<div class="wrap-m">
-	<div class="header-m" id="header-m"></div>
-	<div class="container">
-        <img src="resource/img/mobile/m_01_title.png" class="sub-title" alt="about me">
-		<div class="content">
-			<h5>프로필</h5>
-			<dl class="profile-list">
-				<dt class="profile-title">이름</dt>
-				<dd class="profile-description">김윤서</dd>
-				<dt class="profile-title">연락처</dt>
-				<dd class="profile-description">010-8390-7426</dd>
-				<dt class="profile-title">이메일</dt>
-				<dd class="profile-description">yunsso@kakao.com</dd>
-				<dt class="profile-title">홈페이지</dt>
-				<dd class="profile-description">vamosaamor.dothome.co.kr<br>danhobak.dothome.co.kr</dd>
-			</dl>
-			<h5>경력</h5>
-			<dl class="career-list">
-				<dt class="career-title">이노트리 웹 퍼블리셔</dt>
-				<dd class="career-date">2020년 8월 - 2022년 8월</dd>
-				<dd class="career-description">소프트웨어 개발/E-Commerce 전문회사인 이노트리에서 여러 프로젝트에 참여하여 웹 퍼블리싱을 담당했습니다.</dd>
-				<dt class="career-title">더모션디자인 웹 퍼블리셔</dt>
-				<dd class="career-date">2019년 12월 - 2020년 8월</dd>
-				<dd class="career-description">KH정보교육원에서 함께 일한 인연을 이어 더모션디자인에서 웹 퍼블리싱을 담당했습니다.</dd>
-				<dt class="career-title">KH정보교육원 웹 디자이너</dt>
-				<dd class="career-date">2016년 4월 - 2019년 8월</dd>
-				<dd class="career-description">개발/보안 전문 학원에서 웹 디자이너로 입사해 웹/포스터/패키지/편집 디자인과 웹 퍼블리싱을 담당했습니다.</dd>
-			</dl>
-			<h5>학력</h5>
-			<dl class="career-list">
-				<dt class="career-title">학점은행제 정보통신공학 전공</dt>
-				<dd class="career-date">2021년 3월 - 2022년 3월</dd>
-				<dt class="career-title">강동대학교 스마트폰과 전문학사</dt>
-				<dd class="career-date">2013년 2월 - 2015년 2월</dd>
-				<dt class="career-title">청원여자고등학교</dt>
-				<dd class="career-date">2010년 3월 - 2013년 2월</dd>
-			</dl>
-			<h5>자격증</h5>
-			<dl class="career-list">
-				<dt class="career-title">정보처리기사</dt>
-				<dd class="career-date">2021년 8월</dd>
-				<dt class="career-title">정보처리산업기사</dt>
-				<dd class="career-date">2016년 5월</dd>
-				<dt class="career-title">ICDL(International Computer Driving Licence)</dt>
-				<dd class="career-date">2014년 2월</dd>
-			</dl>
-			<h5>교육 수료</h5>
-			<dl class="career-list">
-				<dt class="career-title">[프론트엔드개발]리액트(React)</dt>
-				<dd class="career-date">2020년 9월 - 2020년 11월</dd>
-				<dd class="career-description">프론트엔드 개발 학습을 위해 리액트 교육을 수료했습니다.</dd>
-				<dt class="career-title">반응형 웹디자인 (Java script, jQuery) 과정</dt>
-				<dd class="career-date">2020년 5월 - 2020년 5월</dd>
-				<dd class="career-description">변수/함수/이벤트/연산자/조건문/반복문/분기문 등의 기초 지식, 코드 작성규칙과 배열 객체개념, JSON을 학습했습니다.</dd>
-				<dt class="career-title">컴퓨터활용능력 1급 자격증 취득과정</dt>
-				<dd class="career-date">2019년 10월 - 2019년 11월</dd>
-				<dd class="career-description">엑셀/액세스 활용을 위한 실기 시험 대비 교육을 수료했습니다.</dd>
-				<dt class="career-title">웹퍼블리셔(초급) HTML5/CSS</dt>
-				<dd class="career-date">2017년 1월 - 2017년 2월</dd>
-				<dd class="career-description">모바일 리뉴얼 퍼블리싱을 위해 반응형 웹 퍼블리싱 교육을 수료했습니다.</dd>
-				<dt class="career-title">웹퍼블리셔 취업과정</dt>
-				<dd class="career-date">2015년 10월 - 2016년 2월</dd>
-				<dd class="career-description">사진 보정 및 합성(포토샵 툴 기능 익힘), 웹페이지 시안과 UI/UX 디자인(일러스트레이터 툴 기능 익힘), HTML5를 활용한 간단한 웹페이지 구조 설계, CSS를 활용한 웹페이지 스타일링, JQuery를 활용한 슬라이드, 메뉴, 배너 제작 등의 교육을 수료했습니다.</dd>
-			</dl>
-			<h5>전문기술</h5>
-            <dl class="career-list">
-				<dt class="career-title">전분 분야와 기술, 업무 시 사용하는 도구입니다.</dt>
-                <ul>
-                    <li>· 웹 표준, 브라우저 호환성, 반응형 웹, 웹 접근성</li>
-                    <li>· HTML5</li>
-                    <li>· CSS3</li>
-                    <li>· JavaScript, jQuery</li>
-                    <li>· VS Code, Git, Chrome DevTools</li>
-                </ul>
-			</dl>
-			<h5>협업</h5>
-            <dl class="career-list">
-				<dt class="career-title">프로젝트 목표를 제대로 이해하고 여러 직군과 협업합니다. 다양한 프로젝트에서 팀원 및 분야 책임자로 일한 경험이 있습니다.</dt>
-                <ul>
-                    <li>· Email</li>
-                    <li>· 프로젝트 및 이슈 관리: Jira, Notion, Google Drive, Excel</li>
-                    <li>· 기획: PowerPoint, Excel</li>
-                    <li>· 디자인 : Photoshop, Illustrator, Zeplin</li>
-                </ul>
-			</dl>
-		</div>
-	</div>
-	<div class="footer-m" id="footer-m"></div>
 </div>
 </body>
 </html>

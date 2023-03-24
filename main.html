@@ -15,20 +15,13 @@
 <link rel="shortcut icon" type="image/x-icon" href="./resource/favicon.ico">
 <link rel="stylesheet" href="./resource/css/common.css">
 <link rel="stylesheet" href="./resource/css/main.css">
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script>   
-		$(document).ready(function() {
-			$("#header").load("./header.html");
-			$("#footer").load("./footer.html");
-			$("#header-m").load("./header-m.html");
-			$("#footer-m").load("./footer-m.html");
-		});
-	</script>
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./resource/js/resize.js"></script>
 </head>
 <body>
-<div class="wrap">
+<div class="wrapSwitch wrap">
 	<div class="header" id="header"></div>
-	<div class="container">
+	<div class="container pcOnly">
 		<div class="text">
 			<div class="title">LOVE YOU!</div>
 			<div class="text-01">
@@ -48,11 +41,7 @@
 			<img src="resource/img/pc/01_content_02.png" class="end">
 		</div>
 	</div>
-	<div class="footer" id="footer"></div>
-</div>
-<div class="wrap-m">
-	<div class="header-m" id="header-m"></div>
-	<div class="container">
+	<div class="container moOnly">
 		<div class="text">
 			<div class="title"><img src="resource/img/mobile/m_01_content_title.png"></div>
 			<div class="text-01">
@@ -78,7 +67,7 @@
 			<img src="resource/img/mobile/m_01_content_02.png" class="end">
 		</div>
 	</div>
-	<div class="footer-m" id="footer-m"></div>
+	<div class="footer" id="footer"></div>
 </div>
 </body>
 </html>

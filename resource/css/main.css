@@ -2,6 +2,9 @@
   /* WEB - INTRO */
   /* WEB - MAIN */
 }
+.wrap .moOnly {
+  display: none;
+}
 .wrap .intro {
   width: 100%;
   height: 100vh;
@@ -61,6 +64,9 @@
 .wrap-m {
   /* MOBILE - INTRO */
   /* MOBILE - MAIN */
+}
+.wrap-m .pcOnly {
+  display: none;
 }
 .wrap-m .intro {
   width: 100%;

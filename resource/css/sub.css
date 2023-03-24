@@ -1,3 +1,6 @@
+.wrap .moOnly {
+  display: none;
+}
 .wrap .container {
   padding: 60px;
   background: #fff;
@@ -150,6 +153,9 @@
 .wrap-m {
   /* MOBILE - SUB - PAGE01 */
 }
+.wrap-m .pcOnly {
+  display: none;
+}
 .wrap-m .container {
   text-align: left;
   padding: 7em 3vw 2em;
@@ -272,10 +278,10 @@
 .wrap-m .container .content-sub {
   text-align: center;
 }
-.wrap-m .container .content-sub p.p4-01 {
+.wrap-m .container .content-sub .title p.p4-01 {
   line-height: 1.2em;
 }
-.wrap-m .container .content-sub p.p4-02 {
+.wrap-m .container .content-sub .title p.p4-02 {
   line-height: 1.2em;
   margin: 0.3em 0 1em;
 }
