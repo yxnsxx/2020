@@ -1,2 +1,2 @@
-# pf2020
-이걸 왜 추가해 ?
+# Portfolio 2020 Version
+Adding little by little ...
