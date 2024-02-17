@@ -162,6 +162,7 @@ li {
         padding: 1.6rem;
         text-align: center;
         border-bottom: 1px solid #ddd;
+        transition: all 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75);
 
         &:nth-child(1) {
           font-weight: 500;
