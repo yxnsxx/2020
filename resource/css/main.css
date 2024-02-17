@@ -12,8 +12,6 @@
   margin: 0;
   cursor: pointer;
   background: #29dfff;
-  background: -moz-linear-gradient(-45deg, #ffed8b 0%, #29dfff 100%);
-  background: -webkit-linear-gradient(-45deg, #ffed8b 0%, #29dfff 100%);
   background: linear-gradient(135deg, #ffed8b 0%, #29dfff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffed8b", endColorstr="#29dfff", GradientType=1);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffed8b", endColorstr="#29dfff", GradientType=1);
@@ -75,8 +73,6 @@
   margin: 0;
   cursor: pointer;
   background: #29dfff;
-  background: -moz-linear-gradient(-45deg, #ffed8b 0%, #29dfff 100%);
-  background: -webkit-linear-gradient(-45deg, #ffed8b 0%, #29dfff 100%);
   background: linear-gradient(135deg, #ffed8b 0%, #29dfff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffed8b", endColorstr="#29dfff", GradientType=1);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffed8b", endColorstr="#29dfff", GradientType=1);

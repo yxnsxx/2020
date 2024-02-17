@@ -182,7 +182,8 @@ p {
   box-sizing: border-box;
   position: fixed;
   z-index: 1000;
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 .wrap-m .header .hair {
   display: flex;

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>정자 홧팅</title>
+  <title>쩡짜 홧팅</title>
   <meta name="Author" content="vamosaamar">
   <meta name="Viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
@@ -16,7 +16,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="./resource/favicon.ico">
   <link rel="stylesheet" href="./resource/css/ja.css">
   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script> 
+  <script>
     $(function(){
       $(window).scroll(function(){
         var screenScrollTop = $(window).scrollTop();
@@ -31,6 +31,25 @@
         $(this).toggleClass('on');
         $('.voca-note-table').toggleClass('mean-unseen');
       });
+
+      //검색
+      const wordList = $('.voca-note-table tr td:first-child').html;
+      console.log(wordList);
+      $('.search-input').on("change keyup paste", function(){
+        const aaa = $(this).val();
+        // const bbb = $(':contains(aaa)');
+
+        // const str = $('.voca-note-table').();
+        // let chkVal = false;
+
+        // if (str.indexOf('CSS') !== -1) {
+        //   chkVal = false;
+        //   } else {
+        //   chkVal = true;  
+        // }
+
+        
+      });
     });
   </script>
 </head>
@@ -41,56 +60,152 @@
       <h1 class="voca-note-tit">쩡짜의 영어단어장</h1>
       <div class="voca-btn-wrap">
         <button type="button" class="mean-toggle">뜻</button>
-        <button type="button" class="turn-toggle">회차 전체보기</button>
+        <!-- <button type="button" class="search-toggle">검색</button>
+        <div class="search-warp">
+          <input type="search" class="search-input" placeholder="단어를 입력해 주세용용가리"></input>
+        </div> -->
       </div>
     </section>
-    <div class="voca-note-ctt">
-      <h2 class="voca-note-subtit">2023년 2회차</h2>
-      <table class="voca-note-table">
-        <tbody>
-          <tr><td>because</td><td>비커우즈</td><td>왜냐하면</td></tr>
-          <tr><td>know</td><td>노우</td><td>알다</td></tr>
-          <tr><td>knowledge</td><td>놀리지</td><td>지식</td></tr>
-          <tr><td>great</td><td>그레잍</td><td>훌륭한</td></tr>
-          <tr><td>gain</td><td>게인</td><td>얻다</td></tr>
-          <tr><td>read</td><td>리드</td><td>읽다</td></tr>
-          <tr><td>never ~</td><td>네버</td><td>절대 ~ 하지 않다</td></tr>
-          <tr><td>dream</td><td>드림</td><td>꿈</td></tr>
-          <tr><td>meet</td><td>미ㅌ</td><td>만나다</td></tr>
-          <tr><td>difficult</td><td>디피컬트</td><td>어려움</td></tr>
-          <tr><td>example</td><td>이그젬플</td><td>예시</td></tr>
-          <tr><td>past</td><td>패스트</td><td>과거</td></tr>
-          <tr><td>present</td><td>프레젠트</td><td>선물 / 현재 / 발표하다</td></tr>
-          <tr><td>future</td><td>퓨처</td><td>미래</td></tr>
-          <tr><td>live</td><td>리브</td><td>살다</td></tr>
-          <tr><td>understand</td><td>언더스탠드</td><td>이해하다</td></tr>
-          <tr><td>about ~</td><td>어바웃</td><td>~에 대하여</td></tr>
-          <tr><td>but</td><td>버ㅌ</td><td>그러나</td></tr>
-          <tr><td>positive</td><td>포지티브</td><td>긍정적인</td></tr>
-          <tr><td>negative</td><td>네거티브</td><td>부정적인</td></tr>
-          <tr><td>leap</td><td>리프</td><td>껑충 뛰다, 뛰어오르다</td></tr>
-          <tr><td>this</td><td>디스</td><td>이것</td></tr>
-          <tr><td>that</td><td>댓</td><td>저것</td></tr>
-          <tr><td>it</td><td>잇</td><td>그것</td></tr>
-          <tr><td>from ~</td><td>프롬</td><td>~에서부터</td></tr>
-          <tr><td>to ~</td><td>투</td><td>~에게</td></tr>
-          <tr><td>on</td><td>온</td><td>위에</td></tr>
-          <tr><td>in</td><td>인</td><td>안에</td></tr>
-          <tr><td>under</td><td>언더</td><td>아래에</td></tr>
-          <tr><td class="table-tit" colspan="99999">숙어</td></tr>
-          <tr><td>give up</td><td>기브 업</td><td>포기하다</td></tr>
-          <tr><td>even if ~</td><td>이븐 이프</td><td>비록 ~일지라도</td></tr>
-          <tr><td class="table-tit" colspan="99999">육하원칙</td></tr>
-          <tr><td>when</td><td>웬</td><td>언제</td></tr>
-          <tr><td>where</td><td>웨어ㄹ</td><td>어디서</td></tr>
-          <tr><td>how</td><td>하우</td><td>어떻게</td></tr>
-          <tr><td>what</td><td>왓</td><td>무엇을</td></tr>
-          <tr><td>who</td><td>후</td><td>누가</td></tr>
-          <tr><td>why</td><td>와이</td><td>왜</td></tr>
-        </tbody>
-      </table>
+    <section class="voca-note-list">
+      <!-- s : 육하원칙 -->
+      <div class="voca-note-item">
+        <h2 class="voca-note-subtit">육하원칙</h2>
+        <table class="voca-note-table">
+          <tbody>
+            <tr><td>when</td><td>웬</td><td>언제</td></tr>
+            <tr><td>where</td><td>웨어ㄹ</td><td>어디서</td></tr>
+            <tr><td>how</td><td>하우</td><td>어떻게</td></tr>
+            <tr><td>what</td><td>왓</td><td>무엇을</td></tr>
+            <tr><td>who</td><td>후</td><td>누가</td></tr>
+            <tr><td>why</td><td>와이</td><td>왜</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- e : 육하원칙 -->
+      <!-- s : 단어 -->
+      <div class="voca-note-item">
+        <h2 class="voca-note-subtit">단어</h2>
+        <table class="voca-note-table">
+          <tbody>
+            <tr><td>weather</td><td>웨더</td><td>날씨</td></tr>
+            <tr><td>various</td><td>배리어스</td><td>다양한</td></tr>
+            <tr><td>need</td><td>니드</td><td>필요하다</td></tr>
+            <tr><td>carefully</td><td>케어풀리</td><td>주의 깊게</td></tr>
+            <tr><td>something</td><td>썸씽</td><td>어떤 것[일], 무엇</td></tr>
+            <tr><td>person</td><td>퍼ㄹ슨</td><td>사람</td></tr>
+            <tr><td>personality</td><td>퍼스널리티</td><td>성격</td></tr>
+            <tr><td>describe</td><td>디스크라이브</td><td>서술하다</td></tr>
+            <tr><td>tend</td><td>텐드</td><td>(~하는) 경향이 있다</td></tr>
+            <tr><td>follow</td><td>팔로우</td><td>따라가다</td></tr>
+            <tr><td>satisfy</td><td>새티스파이</td><td>만족시키다</td></tr>
+            <tr><td>enough</td><td>이너프</td><td>충분한</td></tr>
+            <tr><td>interest</td><td>인터레스트</td><td>관심, 흥미</td></tr>
+            <tr><td>interesting</td><td>인터레스팅</td><td>흥미로운</td></tr>
+            <tr><td>encourage</td><td>인커리지</td><td>권장하다</td></tr>
+            <tr><td>moreover</td><td>모어오버</td><td>게다가</td></tr>
+            <tr><td>westurn</td><td>웨스턴</td><td>서부의</td></tr>
+            <tr><td>use</td><td>유즈</td><td>사용하다</td></tr>
+            <tr><td>myth</td><td>미쓰</td><td>신화</td></tr>
+            <tr><td>source</td><td>소-스</td><td>원천, 근원</td></tr>
+            <tr><td>culture</td><td>컬쳐</td><td>문화</td></tr>
+            <tr><td>prefer</td><td>프리퍼</td><td>선호하다</td></tr>
+            <tr><td>listen</td><td>리쓴</td><td>듣다</td></tr>
+            <tr><td>listner</td><td>리쓰너</td><td>듣는 사람</td></tr>
+            <tr><td>speak</td><td>스피크</td><td>말하다</td></tr>
+            <tr><td>difficult</td><td>디피컬트</td><td>어려운</td></tr>
+            <tr><td>different</td><td>디프런트</td><td>다른</td></tr>
+            <tr><td>wonder</td><td>원더</td><td>궁금하다, 경이</td></tr>
+            <tr><td>whenever</td><td>웬에버</td><td>언제든</td></tr>
+            <tr><td>write</td><td>롸잍</td><td>(글자·숫자를) 쓰다</td></tr>
+            <tr><td>book</td><td>북</td><td>예약하다, 책</td></tr>
+            <tr><td>arrive</td><td>어라이브</td><td>도착하다</td></tr>
+            <tr><td>forward</td><td>포워드</td><td>앞으로</td></tr>
+            <tr><td>back</td><td>백</td><td>등, 뒤쪽의</td></tr>
+            <tr><td>reply</td><td>리플라이</td><td>대답하다</td></tr>
+            <tr><td>begin</td><td>비긴</td><td>시작하다</td></tr>
+            <tr><td>beginner</td><td>비기너</td><td>시작하는 사람</td></tr>
+            <tr><td>participate</td><td>파ㄹ티시페이트</td><td>참가하다</td></tr>
+            <tr><td>shape</td><td>수ㅖ잎</td><td>모양</td></tr>
+            <tr><td>competition</td><td>컴페티션</td><td>경쟁</td></tr>
+            <tr><td>suffer</td><td>서퍼</td><td>고통받다</td></tr>
+            <tr><td>feel</td><td>필</td><td>느끼다</td></tr>
+            <tr><td>feeling</td><td>필링</td><td>느낌</td></tr>
+            <tr><td>lonely</td><td>로운리</td><td>외로운</td></tr>
+            <tr><td>help</td><td>헬프</td><td>도와주다</td></tr>
+            <tr><td>helpful</td><td>헬ㅍ풀</td><td>도움이 되는</td></tr>
+            <tr><td>important</td><td>임포턴트</td><td>중요한</td></tr>
+            <tr><td>overcome</td><td>오버컴</td><td>극복하다</td></tr>
+            <tr><td>emotion</td><td>이모션</td><td>감정</td></tr>
+            <tr><td>solve</td><td>솔브</td><td>해결하다</td></tr>
+            <tr><td>several</td><td>세버럴</td><td>몇몇의</td></tr>
+            <tr><td>solution</td><td>솔루션</td><td>해법, 해결책</td></tr>
+            <tr><td>necessary</td><td>니씨세리</td><td>필요한</td></tr>
+            <tr><td>choose</td><td>츄즈</td><td>선택하다</td></tr>
+            <tr><td>possible</td><td>파서블</td><td>가능한</td></tr>
+            <tr><td>evaluate</td><td>이밸류에이트</td><td>평가하다</td></tr>
+            <tr><td>result</td><td>리절ㅌ</td><td>결과</td></tr>
+            <tr><td>conversation</td><td>컨버ㄹ세이션</td><td>대화</td></tr>
+            <tr><td>refer</td><td>리퍼</td><td>알아보도록 하다, 참조하게 하다</td></tr>
+            <tr><td>referred</td><td>리퍼드</td><td>(refer의 과거형) 참조된</td></tr>
+            <tr><td>someone</td><td>썸원</td><td>누군가</td></tr>
+            <tr><td>instead</td><td>인스티드</td><td>대신에</td></tr>
+            <tr><td>casual</td><td>캐주얼</td><td>무심한</td></tr>
+            <tr><td>serious</td><td>시리어스</td><td>심각한, 진지한</td></tr>
+            <tr><td>problem</td><td>프라블럼</td><td>문제</td></tr>
+            <tr><td>proverb</td><td>프라벌브</td><td>속담</td></tr>
+            <tr><td>strange</td><td>스트레인지</td><td>이상한</td></tr>
+            <tr><td>opinion</td><td>오피니언</td><td>의견</td></tr>
+            <tr><td>description</td><td>디스크립션</td><td>서술</td></tr>
+            <tr><td>brief</td><td>브리프</td><td>(시간이) 짧은, 업무</td></tr>
+            <tr><td>diverse</td><td>다이버스</td><td>다양한</td></tr>
+
+            <tr><td>because</td><td>비커우즈</td><td>왜냐하면</td></tr>
+            <tr><td>know</td><td>노우</td><td>알다</td></tr>
+            <tr><td>knowledge</td><td>놀리지</td><td>지식</td></tr>
+            <tr><td>great</td><td>그레잍</td><td>훌륭한</td></tr>
+            <tr><td>gain</td><td>게인</td><td>얻다</td></tr>
+            <tr><td>read</td><td>리드</td><td>읽다</td></tr>
+            <tr><td>never ~</td><td>네버</td><td>절대 ~ 하지 않다</td></tr>
+            <tr><td>dream</td><td>드림</td><td>꿈</td></tr>
+            <tr><td>meet</td><td>미ㅌ</td><td>만나다</td></tr>
+            <tr><td>difficult</td><td>디피컬트</td><td>어려움</td></tr>
+            <tr><td>example</td><td>이그젬플</td><td>예시</td></tr>
+            <tr><td>past</td><td>패스트</td><td>과거</td></tr>
+            <tr><td>present</td><td>프레젠트</td><td>선물 / 현재 / 발표하다</td></tr>
+            <tr><td>future</td><td>퓨처</td><td>미래</td></tr>
+            <tr><td>live</td><td>리브</td><td>살다</td></tr>
+            <tr><td>understand</td><td>언더스탠드</td><td>이해하다</td></tr>
+            <tr><td>about ~</td><td>어바웃</td><td>~에 대하여</td></tr>
+            <tr><td>but</td><td>버ㅌ</td><td>그러나</td></tr>
+            <tr><td>positive</td><td>포지티브</td><td>긍정적인</td></tr>
+            <tr><td>negative</td><td>네거티브</td><td>부정적인</td></tr>
+            <tr><td>leap</td><td>리프</td><td>껑충 뛰다, 뛰어오르다</td></tr>
+            <tr><td>this</td><td>디스</td><td>이것</td></tr>
+            <tr><td>that</td><td>댓</td><td>저것</td></tr>
+            <tr><td>it</td><td>잇</td><td>그것</td></tr>
+            <tr><td>from ~</td><td>프롬</td><td>~에서부터</td></tr>
+            <tr><td>to ~</td><td>투</td><td>~에게</td></tr>
+            <tr><td>on</td><td>온</td><td>위에</td></tr>
+            <tr><td>in</td><td>인</td><td>안에</td></tr>
+            <tr><td>under</td><td>언더</td><td>아래에</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- e : 단어 -->
+      <!-- s : 숙어 -->
+      <div class="voca-note-item">
+        <h2 class="voca-note-subtit">숙어</h2>
+        <table class="voca-note-table">
+          <tbody>
+            <tr><td>give up</td><td>기브 업</td><td>포기하다</td></tr>
+            <tr><td>even if ~</td><td>이븐 이프</td><td>비록 ~일지라도</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- e : 숙어 -->
+      </div>
     </div>
-  </div>
+  </section>
 </body>
 
 </html>
