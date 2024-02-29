@@ -142,7 +142,7 @@ li {
   background-color: #fff7f7;
 }
 .voca-note-table tbody tr td {
-  padding: 1.6rem;
+  padding: 1.6rem 0.4rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
   transition: all 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75);
