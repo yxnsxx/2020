@@ -4,11 +4,11 @@
 .wrap .container {
   padding: 60px;
   background: #fff;
-  /* WEB - SUB - PAGE01 */
+  /* WEB - SUB - ABOUT */
 }
 .wrap .container .content {
-  /* WEB - SUB - PAGE02 */
-  /* WEB - SUB - PAGE03 */
+  /* WEB - SUB - WORK */
+  /* WEB - SUB - DESIGN */
 }
 .wrap .container .content h5 {
   color: #7ee5d0;
@@ -121,9 +121,9 @@
   margin: 0 0 0 15px;
 }
 .wrap .container .content-sub {
-  /* WEB - SUB - PAGE02 */
+  /* WEB - SUB - WORK */
   text-align: center;
-  /* WEB - SUB - PAGE04 */
+  /* WEB - SUB - BYE */
 }
 .wrap .container .content-sub p {
   font-size: 17px;
@@ -151,7 +151,7 @@
   margin: 0 0 6px 0;
 }
 .wrap-m {
-  /* MOBILE - SUB - PAGE01 */
+  /* MOBILE - SUB - ABOUT */
 }
 .wrap-m .pcOnly {
   display: none;
@@ -163,7 +163,7 @@
   background: url(/resource/img/mobile/m_00_common_bg.png) no-repeat;
   background-size: 100%;
   background-position: 0 3em;
-  /* MOBILE - SUB - PAGE04 */
+  /* MOBILE - SUB - BYE */
 }
 .wrap-m .container .sub-title {
   padding: 0 0 2em;
@@ -171,12 +171,12 @@
 .wrap-m .container .content {
   padding: 1.2em;
   background: #fff;
-  /* MOBILE - SUB - PAGE03 */
+  /* MOBILE - SUB - DESIGN */
 }
 .wrap-m .container .content h5 {
   color: #7ee5d0;
   font-size: 1.3em;
-  /* MOBILE - SUB - PAGE02 */
+  /* MOBILE - SUB - WORK */
 }
 .wrap-m .container .content h5.pumpkin {
   color: #ff9c00;

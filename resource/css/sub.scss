@@ -6,7 +6,7 @@
         padding: 60px;
         background: #fff;
 
-        /* WEB - SUB - PAGE01 */
+        /* WEB - SUB - ABOUT */
         .content {
             h5 {
                 color: #7ee5d0;
@@ -96,7 +96,7 @@
                 }
             }
 
-            /* WEB - SUB - PAGE02 */
+            /* WEB - SUB - WORK */
             .title {
                 margin: 0 0 50px;
                 text-align: center;
@@ -109,7 +109,7 @@
                 margin: 30px auto;
             }
 
-            /* WEB - SUB - PAGE03 */
+            /* WEB - SUB - DESIGN */
             .career-comment {
                 font-size: 17px;
                 line-height: 22px;
@@ -157,7 +157,7 @@
         }
 
         .content-sub {
-            /* WEB - SUB - PAGE02 */
+            /* WEB - SUB - WORK */
             text-align: center;
 
             p {
@@ -172,7 +172,7 @@
                 }
             }
 
-            /* WEB - SUB - PAGE04 */
+            /* WEB - SUB - BYE */
             .title {
                 p {
                     &.p4-01 {
@@ -209,7 +209,7 @@
 .wrap-m {
     .pcOnly { display: none; }
 
-    /* MOBILE - SUB - PAGE01 */
+    /* MOBILE - SUB - ABOUT */
     .container {
         text-align: left;
         padding: 7em 3vw 2em;
@@ -230,7 +230,7 @@
                 color: #7ee5d0;
                 font-size: 1.3em;
 
-                /* MOBILE - SUB - PAGE02 */
+                /* MOBILE - SUB - WORK */
                 &.pumpkin {
                     color: #ff9c00;
                     text-align: center;
@@ -318,7 +318,7 @@
                 }
             }
 
-            /* MOBILE - SUB - PAGE03 */
+            /* MOBILE - SUB - DESIGN */
             .career-comment {
                 font-size: 0.9em;
                 line-height: 1.5em;
@@ -363,7 +363,7 @@
             }
         }
 
-        /* MOBILE - SUB - PAGE04 */
+        /* MOBILE - SUB - BYE */
         .content-sub {
             text-align: center;
 
