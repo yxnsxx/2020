@@ -1,4 +1,5 @@
-.wrap .moOnly {
+@import url(common.css);
+.wrap .mo-only {
   display: none;
 }
 .wrap .container {
@@ -54,10 +55,10 @@
   font-size: 17px;
   font-weight: 500;
 }
-.wrap .container .content .career-list dt.career-title {
+.wrap .container .content .career-list dt.career-tit {
   margin: 25px 0 0;
 }
-.wrap .container .content .career-list dt.career-title:first-child {
+.wrap .container .content .career-list dt.career-tit:first-child {
   margin: 0;
 }
 .wrap .container .content .career-list dd {
@@ -99,25 +100,25 @@
 .wrap .container .content .career-list-03 {
   position: relative;
 }
-.wrap .container .content .career-list-03 dt.career-title {
+.wrap .container .content .career-list-03 dt.career-tit {
   margin: 25px 0 0 15px;
 }
-.wrap .container .content .career-list-03 dt.career-title:first-child {
+.wrap .container .content .career-list-03 dt.career-tit:first-child {
   margin: 0 0 0 15px;
 }
-.wrap .container .content .career-list-03 dt.career-title.featured::before {
+.wrap .container .content .career-list-03 dt.career-tit.featured::before {
   color: #7ee5d0;
   font-size: 13px;
   font-family: FontAwesome;
   content: "\f005";
-  margin: 2px 3px 0 0;
+  margin: 7px 3px 0 0;
   position: absolute;
   left: 0;
 }
 .wrap .container .content .career-list-03 dd.career-date {
   margin: 8px 0 12px 15px;
 }
-.wrap .container .content .career-list-03 dd.career-description {
+.wrap .container .content .career-list-03 dd.career-desc {
   margin: 0 0 0 15px;
 }
 .wrap .container .content-sub {
@@ -153,7 +154,7 @@
 .wrap-m {
   /* MOBILE - SUB - ABOUT */
 }
-.wrap-m .pcOnly {
+.wrap-m .pc-only {
   display: none;
 }
 .wrap-m .container {
@@ -231,11 +232,11 @@
   font-weight: 500;
   margin: 0.5em 0 0.8em;
 }
-.wrap-m .container .content .career-list dd.career-description {
+.wrap-m .container .content .career-list dd.career-desc {
   margin: 0 0 1.5em;
   line-height: 1.3em;
 }
-.wrap-m .container .content .career-list dd.career-description:last-child {
+.wrap-m .container .content .career-list dd.career-desc:last-child {
   margin: 0;
 }
 .wrap-m .container .content .career-list ul {
@@ -257,7 +258,7 @@
 .wrap-m .container .content .career-list-03 dt {
   margin: 0 0 0 1.2em;
 }
-.wrap-m .container .content .career-list-03 dt.career-title.featured::before {
+.wrap-m .container .content .career-list-03 dt.career-tit.featured::before {
   color: #7ee5d0;
   font-size: 0.9em;
   font-family: FontAwesome;
@@ -269,10 +270,10 @@
 .wrap-m .container .content .career-list-03 dd.career-date {
   margin: 0.5em 0 0.8em 1.2em;
 }
-.wrap-m .container .content .career-list-03 dd.career-description {
+.wrap-m .container .content .career-list-03 dd.career-desc {
   margin: 0 0 1.5em 1.2em;
 }
-.wrap-m .container .content .career-list-03 dd.career-description:last-child {
+.wrap-m .container .content .career-list-03 dd.career-desc:last-child {
   margin: 0 0 0 1.2em;
 }
 .wrap-m .container .content-sub {
@@ -296,4 +297,4 @@
 .wrap-m .container .content-sub .cont-favorite ul li:nth-child(3n) {
   margin: 0 0 1% 0;
 }
-/* MEDIA QUERY *//*# sourceMappingURL=sub.css.map */
+/* MEDIA QUERY */

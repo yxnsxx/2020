@@ -1,91 +1,23 @@
-@charset "UTF-8";
-/* G마켓 산스 */
+@import url(reset.css);
+/* Pretendard */
 @font-face {
-  font-family: "Gmarket Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Gmarket Sans Bold"), local("GmarketSans-Bold"), url("https://script.gmarket.com/fonts/GmarketSansBold.woff2") format("woff2"), url("https://script.gmarket.com/fonts/GmarketSansBold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
 }
 @font-face {
-  font-family: "Gmarket Sans";
-  font-style: normal;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2") format("woff2");
   font-weight: 500;
-  src: local("Gmarket Sans Medium"), local("GmarketSans-Medium"), url("https://script.gmarket.com/fonts/GmarketSansMedium.woff2") format("woff2"), url("https://script.gmarket.com/fonts/GmarketSansMedium.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 @font-face {
-  font-family: "Gmarket Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Gmarket Sans Light"), local("GmarketSans-Light"), url("https://script.gmarket.com/fonts/GmarketSansLight.woff2") format("woff2"), url("https://script.gmarket.com/fonts/GmarketSansLight.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
 }
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0.5px;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a,
-a:hover,
-a:active,
-a:focus {
-  color: #333;
-  text-decoration: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-img {
-  border: 0 none;
-  vertical-align: top;
-}
-
-textarea {
-  resize: none;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-/* font rule */
-body,
-table,
-input,
-textarea,
-select,
-button,
-th,
-td,
-p,
-li {
-  font-family: Gmarket Sans;
-  font-weight: 300;
-}
-
-div,
-p {
-  color: #333;
-}
-
 /* WEB - COMMON */
 .wrap {
   width: 100%;
@@ -182,8 +114,7 @@ p {
   box-sizing: border-box;
   position: fixed;
   z-index: 1000;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 .wrap-m .header .hair {
   display: flex;
@@ -281,4 +212,4 @@ p {
   .wrap-m .footer .copyright {
     font-size: 0.6em;
   }
-}/*# sourceMappingURL=common.css.map */
+}
