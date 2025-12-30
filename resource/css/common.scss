@@ -62,6 +62,7 @@
       justify-content: space-between;
       gap: 12px;
       overflow: hidden;
+      counter-reset: num;
 
       li {
         width: calc((100% - 12px * 3) / 4);
@@ -87,16 +88,14 @@
         }
         
         a {
-          display: flex;
           color: #555;
           font-size: 12px;
           font-weight: 700;
-          counter-reset: num;
           &::before {
             counter-increment: num;
             content: counter(num, decimal-leading-zero) " ";
             display: inline-block;
-            margin-right: 8px;
+            margin-right: 12px;
           }
         }
       }

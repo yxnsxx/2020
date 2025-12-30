@@ -46,15 +46,17 @@
   padding: 50px 0 15px;
 }
 .wrap .gnb ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
   overflow: hidden;
+  counter-reset: num;
 }
 .wrap .gnb ul li {
-  float: left;
-  width: 24%;
-  margin-right: 1.333%;
-  padding: 0 0 12px;
+  width: calc((100% - 36px) / 4);
   background-position: center bottom;
   background-repeat: no-repeat;
+  padding: 0 0 12px;
 }
 .wrap .gnb ul li:nth-child(1) {
   background-image: url(../img/pc/00_menu_01.png);
@@ -73,6 +75,12 @@
   color: #555;
   font-size: 12px;
   font-weight: 700;
+}
+.wrap .gnb ul li a::before {
+  counter-increment: num;
+  content: counter(num, decimal-leading-zero) " ";
+  display: inline-block;
+  margin-right: 12px;
 }
 .wrap .footer {
   width: 1080px;
