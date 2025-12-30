@@ -58,37 +58,46 @@
 
   .gnb {
     ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
       overflow: hidden;
 
       li {
-        float: left;
-        width: 24%;
-        margin-right: 1.333%;
-        padding: 0 0 12px;
+        width: calc((100% - 12px * 3) / 4);
         background-position: center bottom;
         background-repeat: no-repeat;
-
+        padding: 0 0 12px;
+        
         &:nth-child(1) {
           background-image: url(../img/pc/00_menu_01.png);
         }
-
+        
         &:nth-child(2) {
           background-image: url(../img/pc/00_menu_02.png);
         }
-
+        
         &:nth-child(3) {
           background-image: url(../img/pc/00_menu_03.png);
         }
-
+        
         &:nth-child(4) {
           background-image: url(../img/pc/00_menu_04.png);
           margin-right: 0;
         }
-
+        
         a {
+          display: flex;
           color: #555;
           font-size: 12px;
           font-weight: 700;
+          counter-reset: num;
+          &::before {
+            counter-increment: num;
+            content: counter(num, decimal-leading-zero) " ";
+            display: inline-block;
+            margin-right: 8px;
+          }
         }
       }
     }
